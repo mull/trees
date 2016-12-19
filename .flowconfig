@@ -1,0 +1,6 @@
+[ignore]
+<PROJECT_ROOT>/node_modules/fbjs/.*
+
+[options]
+module.file_ext=.js
+unsafe.enable_getters_and_setters=true

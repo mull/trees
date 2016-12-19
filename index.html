@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+<head>
+	<title>Trees yo.</title>
+
+	<style>
+        html {
+            font-size: 16px;
+            font-family: sans-serif, serif;
+            padding: 40px;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+
+        .circle {
+            cursor: pointer;
+            transition: fill .1s;
+            fill: black;
+        }
+
+        .circle:hover {
+            fill: steelblue;
+        }
+
+        .d3-tip {
+            line-height: 1;
+            padding: 6px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            border-radius: 2px;
+            pointer-events: none;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+        /* Creates a small triangle extender for the tooltip */
+        .d3-tip:after {
+            box-sizing: border-box;
+            display: inline;
+            font-size: 10px;
+            width: 100%;
+            line-height: 1;
+            color: rgba(0, 0, 0, 0.8);
+            position: absolute;
+            pointer-events: none;
+        }
+
+        /* Eastward tooltips */
+        .d3-tip.e:after {
+            content: "\25C0";
+            margin: -4px 0 0 0;
+            top: 50%;
+            left: -8px;
+        }
+
+    </style>
+</head>
+<body>
+<nav>
+
+</nav>
+<svg id="svg"></svg>
+<canvas id="canvas"></canvas>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.4.0/d3.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.js" type="text/javascript"></script>
+<script src="/build/js/index.min.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>
